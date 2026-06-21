@@ -48,7 +48,7 @@ export default function LoginPage() {
         router.push("/dashboard");
         router.refresh();
       }
-    } catch (err) {
+    } catch {
       setError("Une erreur inattendue est survenue.");
     } finally {
       setLoading(false);
@@ -70,7 +70,7 @@ export default function LoginPage() {
             Connexion
           </h2>
           <p className="mt-2 text-center text-sm text-[#334155]">
-            Plateforme SaaS modulaire de gestion d'entreprise
+            {"Plateforme SaaS modulaire de gestion d'entreprise"}
           </p>
         </div>
 

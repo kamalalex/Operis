@@ -116,7 +116,7 @@ export default function SettingsPage() {
 
               <div className="space-y-1">
                 <label className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
-                  Nom de l'entreprise
+                  {"Nom de l'entreprise"}
                 </label>
                 <input
                   type="text"
@@ -168,7 +168,7 @@ export default function SettingsPage() {
                 htmlFor="allowUserRegistration"
                 className="text-sm font-semibold text-slate-700 dark:text-slate-300 select-none"
               >
-                Autoriser l'inscription publique de nouveaux utilisateurs
+                {"Autoriser l'inscription publique de nouveaux utilisateurs"}
               </label>
             </div>
 
@@ -195,7 +195,7 @@ export default function SettingsPage() {
       {activeTab === "permissions" && (
         <div className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-xl card-shadow overflow-hidden">
           <div className="px-6 py-4 border-b border-slate-250 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-950/20">
-            <h3 className="font-bold text-sm text-slate-800 dark:text-slate-200">Table d'audit des permissions</h3>
+            <h3 className="font-bold text-sm text-slate-800 dark:text-slate-200">{"Table d'audit des permissions"}</h3>
             <p className="text-xs text-slate-450">
               Visualiser toutes les permissions enregistrées et déclarées par le noyau et les modules actifs.
             </p>

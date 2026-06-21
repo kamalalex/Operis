@@ -54,7 +54,7 @@ export default async function DashboardPage() {
             Bonjour, {session?.user?.name || "Utilisateur"}
           </h2>
           <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
-            Bienvenue sur le portail d'administration de la plateforme SaaS. Vos modules métiers s'enregistrent de manière isolée au démarrage pour garantir un couplage faible et une extensibilité maximale.
+            {"Bienvenue sur le portail d'administration de la plateforme SaaS. Vos modules métiers s'enregistrent de manière isolée au démarrage pour garantir un couplage faible et une extensibilité maximale."}
           </p>
         </div>
       </div>
@@ -106,7 +106,7 @@ export default async function DashboardPage() {
                 <div>
                   <h4 className="text-sm font-semibold text-slate-750 dark:text-slate-300">Aucun module métier actif</h4>
                   <p className="text-xs text-slate-450 dark:text-slate-500 max-w-sm mx-auto mt-1 leading-relaxed">
-                    Les modules d'affaires (ex: Task, Achat, CRM) s'enregistrent d'eux-mêmes au niveau du Core. Prêt pour l'enregistrement du premier module !
+                    {"Les modules d'affaires (ex: Task, Achat, CRM) s'enregistrent d'eux-mêmes au niveau du Core. Prêt pour l'enregistrement du premier module !"}
                   </p>
                 </div>
                 <div className="pt-2">
@@ -166,7 +166,11 @@ export default async function DashboardPage() {
               Rôles & Permissions
             </h4>
             <p className="text-xs text-slate-450 dark:text-slate-500 leading-relaxed">
-              Le système filtre les routes et les éléments de menu dynamiquement au démarrage. Le noyau enregistre {corePermissionDetails.length} permissions fondamentales et regroupe {allPermissions.length} permissions d'extensions modules.
+              {"Le système filtre les routes et les éléments de menu dynamiquement au démarrage. Le noyau enregistre "}
+              {corePermissionDetails.length}
+              {" permissions fondamentales et regroupe "}
+              {allPermissions.length}
+              {" permissions d'extensions modules."}
             </p>
           </div>
         </div>
