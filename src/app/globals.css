@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  /* Charte Graphique "Industrial Slate" */
+  --background: #F8FAFC;      /* Fond principal très doux */
+  --foreground: #0F172A;      /* Ardoise profond pour les contrastes */
+  --card: #FFFFFF;            /* Blanc pur pour faire ressortir les éléments */
+  --accent: #0F172A;          /* Bleu-noir profond pour boutons/focus */
+  --accent-hover: #1E293B;
+  --text-primary: #334155;    /* Gris foncé texturé moins agressif que le noir */
+  --text-muted: #64748B;      /* Légèrement estompé */
+  --border: #E2E8F0;          /* Gris clair très fin pour séparateurs */
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-border-custom: var(--border);
+  --color-text-main: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+/* Panel glassmorphism style inspiré de Linear/Notion */
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
